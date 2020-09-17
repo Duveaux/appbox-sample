@@ -1,5 +1,5 @@
 {
-  "name": "Publisher",
+  "name": "Test",
   "color": {
     "r": 50,
     "g": 255,
@@ -10,10 +10,6 @@
   "mobileSettings": {
     "actionsDisplayAs": "bottom-navigation"
   },
-"handlerFor": {
-    "publish-sites": "/publisher/{object:data.id}",
-    "publisher-pages": "/publisher/{object:data.site}/pages/{object:data.slug}"
-},
   "defaultModels": {
     "required": {
       "test-alpha": {
@@ -44,7 +40,7 @@
         },
         "overviews": {
           "default": {
-            "fields": ["name". 'number'],
+            "fields": ["name", 'number'],
             "buttons": ["create"],
             "actions": ["delete"]
           }
