@@ -13,9 +13,6 @@
 	"defaultModels": {
 		"required": {
 			"test-alpha": {
-				"_id": {
-					"$oid": "5f61f6c4a6521c270057dc45"
-				},
 				"preview": {
 					"fields": []
 				},
@@ -93,7 +90,6 @@
 						"buttons": []
 					}
 				},
-				"__v": 0,
 				"app": "test",
 				"icon": "FaVials",
 				"primary": "name",
@@ -119,9 +115,6 @@
 				"indexed": true
 			},
 			"test-beta": {
-				"_id": {
-					"$oid": "5f61f6caa6521c270057dc46"
-				},
 				"preview": {
 					"fields": []
 				},
