@@ -40,7 +40,7 @@
         },
         "overviews": {
           "default": {
-            "fields": ["name", 'number'],
+            "fields": ["name", "number"],
             "buttons": ["create"],
             "actions": ["delete"]
           }
