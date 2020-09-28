@@ -10,7 +10,7 @@
   "mobileSettings": {
     "actionsDisplayAs": "bottom-navigation"
   },
-  "defaults": {
+  "data": {
     "required": {
       "models": {
         "test-alpha": {
