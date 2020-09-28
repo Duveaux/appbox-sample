@@ -1,250 +1,259 @@
 {
-	"name": "Test",
-	"color": {
-		"r": 50,
-		"g": 255,
-		"b": 200,
-		"a": 1
-	},
-	"icon": "FaVials",
-	"mobileSettings": {
-		"actionsDisplayAs": "bottom-navigation"
-	},
-	"defaultModels": {
-		"required": {
-			"test-alpha": {
-				"preview": {
-					"fields": []
-				},
-				"permissions": {
-					"read": ["known"],
-					"create": ["known"],
-					"modifyOwn": ["known"],
-					"write": ["known"],
-					"delete": ["known"],
-					"deleteOwn": ["known"],
-					"archive": ["known"],
-					"archiveOwn": ["known"]
-				},
-				"key": "test-alpha",
-				"name": "Alpha",
-				"name_plural": "Alphas",
-				"actions": {
-					"create": {
-						"layout": "create",
-						"type": "create"
-					}
-				},
-				"overviews": {
-					"default": {
-						"fields": ["name", "number"],
-						"buttons": ["create"],
-						"actions": ["delete"]
-					}
-				},
-				"layouts": {
-					"default": {
-						"layout": [{
-							"type": "AnimationContainer",
-							"xs": 12,
-							"id": "kf2r51ws",
-							"items": [{
-								"type": "AnimationItem",
-								"xs": 12,
-								"id": "kf2r5375",
-								"items": [{
-									"type": "Paper",
-									"xs": 12,
-									"id": "kf2r56lv",
-									"title": "Alpha",
-									"withBigMargin": true,
-									"key": "default",
-									"items": [{
-										"type": "Field",
-										"xs": 12,
-										"id": "kf5b09p0",
-										"field": "name"
-									}, {
-										"type": "Field",
-										"xs": 12,
-										"id": "kf5b09p1",
-										"field": "number"
-									}]
-								}]
-							}]
-						}],
-						"buttons": []
-					},
-					"create": {
-						"layout": [{
-							"type": "Field",
-							"xs": 12,
-							"id": "kf5b040r",
-							"field": "name"
-						}, {
-							"type": "Field",
-							"xs": 12,
-							"id": "kf5b040r",
-							"field": "number"
-						}],
-						"buttons": []
-					}
-				},
-				"app": "test",
-				"icon": "FaVials",
-				"primary": "name",
-				"fields": {
-					"name": {
-						"name": "Name",
-						"type": "auto_name",
-						"typeArgs": {
-							"mode": "increment",
-							"prefix": "A"
-						}
-					},
-					"number": {
-						"name": "Number",
-						"type": "input",
-						"required": true,
-						"unique": true,
-						"typeArgs": {
-							"type": "number"
-						}
-					}
-				},
-				"indexed": true
-			},
-			"test-beta": {
-				"preview": {
-					"fields": []
-				},
-				"permissions": {
-					"read": [
-						"known"
-					],
-					"create": [
-						"known"
-					],
-					"modifyOwn": [
-						"known"
-					],
-					"write": [
-						"known"
-					],
-					"delete": [
-						"known"
-					],
-					"deleteOwn": [
-						"known"
-					],
-					"archive": [
-						"known"
-					],
-					"archiveOwn": [
-						"known"
-					]
-				},
-				"key": "test-beta",
-				"name": "Beta",
-				"name_plural": "Betas",
-				"actions": {
-					"create": {
-						"layout": "create",
-						"type": "create"
-					}
-				},
-				"overviews": {
-					"default": {
-						"fields": [
-							"name", "number"
-						],
-						"buttons": [
-							"create"
-						],
-						"actions": [
-							"delete"
-						]
-					}
-				},
-				"layouts": {
-					"default": {
-						"layout": [{
-							"type": "AnimationContainer",
-							"xs": 12,
-							"id": "kf2r51ws",
-							"items": [{
-								"type": "AnimationItem",
-								"xs": 12,
-								"id": "kf2r5375",
-								"items": [{
-									"type": "Paper",
-									"xs": 12,
-									"id": "kf2r56lv",
-									"title": "Beta",
-									"withBigMargin": true,
-									"key": "default",
-									"items": [{
-											"type": "Field",
-											"xs": 12,
-											"id": "kf5azha6",
-											"field": "name"
-										},
-										{
-											"type": "Field",
-											"xs": 12,
-											"id": "kf5azha7",
-											"field": "number"
-										}
-									]
-								}]
-							}]
-						}],
-						"buttons": []
-					},
-					"create": {
-						"layout": [{
-								"type": "Field",
-								"xs": 12,
-								"id": "kf5azndc",
-								"field": "name"
-							},
-							{
-								"type": "Field",
-								"xs": 12,
-								"id": "kf5azndd",
-								"field": "number"
-							}
-						],
-						"buttons": []
-					}
-				},
-				"__v": 0,
-				"app": "test",
-				"icon": "FaVials",
-				"primary": "name",
-				"fields": {
-					"name": {
-						"name": "Name",
-						"type": "auto_name",
-						"typeArgs": {
-							"mode": "increment",
-							"prefix": "B"
-						}
-					},
-					"number": {
-						"name": "Number",
-						"type": "input",
-						"required": true,
-						"unique": true,
-						"typeArgs": {
-							"type": "number"
-						}
-					}
-				},
-				"indexed": true
-			}
-		}
-	},
-	"optional": {}
+  "name": "Test",
+  "color": {
+    "r": 50,
+    "g": 255,
+    "b": 200,
+    "a": 1
+  },
+  "icon": "FaVials",
+  "mobileSettings": {
+    "actionsDisplayAs": "bottom-navigation"
+  },
+  "defaults": {
+    "required": {
+      "models": {
+        "test-alpha": {
+          "key": "test-alpha",
+          "name": "Alpha",
+          "name_plural": "Alphas",
+          "actions": {
+            "create": {
+              "layout": "create",
+              "type": "create"
+            }
+          },
 
+          "app": "test",
+          "icon": "FaVials",
+          "primary": "name",
+          "fields": {
+            "name": {
+              "name": "Name",
+              "type": "auto_name",
+              "typeArgs": {
+                "mode": "increment",
+                "prefix": "A"
+              }
+            },
+            "number": {
+              "name": "Number",
+              "type": "input",
+              "required": true,
+              "unique": true,
+              "typeArgs": {
+                "type": "number"
+              }
+            }
+          },
+          "indexed": true
+        },
+        "test-beta": {
+          "key": "test-beta",
+          "name": "Beta",
+          "name_plural": "Betas",
+
+          "__v": 0,
+          "app": "test",
+          "icon": "FaVials",
+          "primary": "name",
+          "fields": {
+            "name": {
+              "name": "Name",
+              "type": "auto_name",
+              "typeArgs": {
+                "mode": "increment",
+                "prefix": "B"
+              }
+            },
+            "number": {
+              "name": "Number",
+              "type": "input",
+              "required": true,
+              "unique": true,
+              "typeArgs": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "optional": {
+      "models": {
+        "test-alpha": {
+          "preview": {
+            "fields": []
+          },
+          "permissions": {
+            "read": ["known"],
+            "create": ["known"],
+            "modifyOwn": ["known"],
+            "write": ["known"],
+            "delete": ["known"],
+            "deleteOwn": ["known"],
+            "archive": ["known"],
+            "archiveOwn": ["known"]
+          },
+          "overviews": {
+            "default": {
+              "fields": ["name", "number"],
+              "buttons": ["create"],
+              "actions": ["delete"]
+            }
+          },
+          "layouts": {
+            "default": {
+              "layout": [
+                {
+                  "type": "AnimationContainer",
+                  "xs": 12,
+                  "id": "kf2r51ws",
+                  "items": [
+                    {
+                      "type": "AnimationItem",
+                      "xs": 12,
+                      "id": "kf2r5375",
+                      "items": [
+                        {
+                          "type": "Paper",
+                          "xs": 12,
+                          "id": "kf2r56lv",
+                          "title": "Alpha",
+                          "withBigMargin": true,
+                          "key": "default",
+                          "items": [
+                            {
+                              "type": "Field",
+                              "xs": 12,
+                              "id": "kf5b09p0",
+                              "field": "name"
+                            },
+                            {
+                              "type": "Field",
+                              "xs": 12,
+                              "id": "kf5b09p1",
+                              "field": "number"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "buttons": []
+            },
+            "create": {
+              "layout": [
+                {
+                  "type": "Field",
+                  "xs": 12,
+                  "id": "kf5b040r",
+                  "field": "name"
+                },
+                {
+                  "type": "Field",
+                  "xs": 12,
+                  "id": "kf5b040r",
+                  "field": "number"
+                }
+              ],
+              "buttons": []
+            }
+          }
+        },
+        "test-beta": {
+          "preview": {
+            "fields": []
+          },
+          "permissions": {
+            "read": ["known"],
+            "create": ["known"],
+            "modifyOwn": ["known"],
+            "write": ["known"],
+            "delete": ["known"],
+            "deleteOwn": ["known"],
+            "archive": ["known"],
+            "archiveOwn": ["known"]
+          },
+          "actions": {
+            "create": {
+              "layout": "create",
+              "type": "create"
+            }
+          },
+          "indexed": true,
+
+          "overviews": {
+            "default": {
+              "fields": ["name", "number"],
+              "buttons": ["create"],
+              "actions": ["delete"]
+            }
+          },
+          "layouts": {
+            "default": {
+              "layout": [
+                {
+                  "type": "AnimationContainer",
+                  "xs": 12,
+                  "id": "kf2r51ws",
+                  "items": [
+                    {
+                      "type": "AnimationItem",
+                      "xs": 12,
+                      "id": "kf2r5375",
+                      "items": [
+                        {
+                          "type": "Paper",
+                          "xs": 12,
+                          "id": "kf2r56lv",
+                          "title": "Beta",
+                          "withBigMargin": true,
+                          "key": "default",
+                          "items": [
+                            {
+                              "type": "Field",
+                              "xs": 12,
+                              "id": "kf5azha6",
+                              "field": "name"
+                            },
+                            {
+                              "type": "Field",
+                              "xs": 12,
+                              "id": "kf5azha7",
+                              "field": "number"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "buttons": []
+            },
+            "create": {
+              "layout": [
+                {
+                  "type": "Field",
+                  "xs": 12,
+                  "id": "kf5azndc",
+                  "field": "name"
+                },
+                {
+                  "type": "Field",
+                  "xs": 12,
+                  "id": "kf5azndd",
+                  "field": "number"
+                }
+              ],
+              "buttons": []
+            }
+          }
+        }
+      }
+    }
+  }
 }
